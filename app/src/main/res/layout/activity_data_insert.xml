@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataInsertActivity">
+
+    <TextView
+        android:id="@+id/idTitleData"
+        android:layout_width="254dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="140dp"
+        android:text="Enter the Title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <TextView
+        android:id="@+id/idNotesData"
+        android:layout_width="254dp"
+        android:layout_height="54dp"
+        android:text="Enter the note"
+        app:layout_constraintBottom_toTopOf="@+id/idbtn"
+        app:layout_constraintEnd_toEndOf="@+id/idTitleData"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idTitleData"
+        app:layout_constraintTop_toBottomOf="@+id/idTitleData"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/idbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="348dp"
+        android:text="Sync"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idNotesData"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/idNotesData" />
+</androidx.constraintlayout.widget.ConstraintLayout>
