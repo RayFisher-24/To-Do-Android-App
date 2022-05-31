@@ -6,20 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".DataInsertActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/idTitleData"
         android:layout_width="254dp"
         android:layout_height="54dp"
         android:layout_marginTop="140dp"
-        android:text="Enter the Title"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="84dp" />
+        android:hint="Enter the Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/idNotesData"
         android:layout_width="254dp"
         android:layout_height="54dp"
-        android:text="Enter the note"
+        android:hint="Enter the note"
         app:layout_constraintBottom_toTopOf="@+id/idbtn"
         app:layout_constraintEnd_toEndOf="@+id/idTitleData"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,4 +38,5 @@
         app:layout_constraintEnd_toEndOf="@+id/idNotesData"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="@+id/idNotesData" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
